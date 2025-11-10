@@ -1,30 +1,3 @@
-$('.center').slick({
-  centerMode: true,
-  centerPadding: '20px',
-  slidesToShow: 3,
-  dots: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '20px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '0',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-
 // navbar JS start
 
 $(".navbarToggler").click(function(){
