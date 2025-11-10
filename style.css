@@ -199,8 +199,8 @@
 }
 
 .cusSubMenu li a:hover {
-    background-color: #fc983c;
-    color: #000
+    background-color: #004489;
+    color: #fff
 }
 
         /* Hero Section */
@@ -216,9 +216,9 @@
         }
 
         .hero-content h1 {
-            font-size: 68px;
+            font-size: 55px;
             font-weight: 300;
-            line-height: 1.1;
+            line-height: 1.3;
             margin-bottom: 30px;
             letter-spacing: -2px;
             color: #fff;
@@ -340,7 +340,7 @@
         /* Services Section */
         .services {
             padding: 80px 0;
-            background: #fff;
+            background: #fafafa;
         }
 
         .section-header {
@@ -548,7 +548,7 @@
         .experience {
             padding: 80px 8%;
             color: #ffffff;
-            background: #fff;
+            background: #fafafa;
         }
 
         .experience-content {
@@ -563,10 +563,24 @@
         }
 
         .experience-text h2 {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 300;
             line-height: 1.2;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+            color: #004489;
+            margin-top: 30px;
+        }
+
+        .experience-text h2.first{
+            margin-top: 0;
+        }
+
+        .experience-text h3{
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 1.2;
+            margin-bottom: 10px;
             letter-spacing: -1px;
             color: #004489;
         }
@@ -576,6 +590,18 @@
             color: #666;
             line-height: 1.8;
             margin-bottom: 20px;
+        }
+
+        .experience-text ul{
+            padding: 0;
+        }
+
+        .experience-text ul li{
+            color: #666;
+            list-style: none;
+            background: url(images/check-mark.png) left 5px/20px no-repeat;
+            padding-left: 25px;
+            margin-bottom: 8px;
         }
 
         .experience-features {
@@ -696,7 +722,7 @@
         /* main fleet */
         .mainFleetSecWrap{
             padding: 80px 0;
-            background-color: #fafafa;
+            background-color: #fff;
         }
         .mainFleetSecWrap .boxesWrap{
             display: flex;
@@ -729,7 +755,7 @@
 
         .frequentDestWrap{
             padding: 80px 0;
-            background-color: #fafafa;
+            background-color: #fff;
         }
         .frequentDestWrap .locationsPara{
             color: #333;
@@ -739,6 +765,71 @@
         .frequentDestWrap .locationsPara a{
             font-weight: 600;
             color: #333;
+        }
+
+        .faqsWrap{
+            padding: 80px 0;
+            background-color: #fafafa;
+        }
+
+        .faqsInner{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .faqsInner .leftCol{
+            width: calc(50% - 15px);
+        }
+        .faqsInner .rightCol{
+            width: calc(50% - 15px);
+        }
+        .faqsInner .leftCol img{
+            border-radius: 24px;
+            max-width: 100%;
+            object-fit: cover;
+            height: 500px;
+        }
+        .faqsWrap .accordion-item{
+            border: none;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0 0 0 / 4%);
+        }
+        .faqsWrap .accordion-button{
+            font-weight: 700;
+            height: 50px;
+            padding: 0;
+            padding-left: 35px;
+            padding-right: 15px;
+            display: block;
+            background: none;
+            border-radius: 10px 10px 0 0 !important;
+            box-shadow: none;
+            color: #fff;
+            font-size: 14px;
+            background: #004489 url(images/minus-sign.png) 15px center / 12px no-repeat;
+        }
+        .faqsWrap .accordion-button.collapsed{
+            background: url(images/plus.png) 15px center / 12px no-repeat;
+            color: #333;
+        }
+        .faqsWrap .accordion-button:after{
+            content: none;
+        }
+        /* .faqsWrap .accordion-button:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            background: url(../contents/images/minus.png) center center / 18px no-repeat;
+            width: 18px;
+            height: 100%;
+        } */
+
+        .faqsWrap .accordion-item .accordion-body p{
+            color: #333;
+            font-size: 12px;
         }
 
         /* Footer */
@@ -809,71 +900,130 @@
         .payment-icons img{
             width: 30px;
         }
-        .center .slick-list,
-        .center{
-            overflow: hidden !important;
+
+        .infoBannerWrap{
+            background: #004489;
+            text-align: center;
+            padding: 80px 0;
         }
-        .center .fleet-card{
-            opacity: 0;
-            transition: all 300ms ease;
+        .infoBannerWrap h2 {
+            color: #fff;
+            font-weight: 500;
+            font-size: 60px;
+            margin-bottom: 30px;
         }
-        .center .slick-current.slick-active .fleet-card {
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  -webkit-transform: scale(1);
-  opacity: 1;
-  transform: scale(1);
-}
-.center .slick-active .fleet-card {
-    -moz-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
-  opacity: 0.8;
-  transition: all 300ms ease;
-}
-.slick-prev:before, .slick-next:before{
-    color: #000;
-}
-.slick-prev, .slick-next{
-    z-index: 99;
-}
-.slick-prev{
-    left: 0;
-}
-.slick-next{
-    right: 0;
-}
-.slick-dots li button:before{
-    content: none;
-}
-.slick-dots{
-    bottom: 0;
-}
-.slick-dots li{
-    height: 8px;
-    width: 8px;
-}
-.slick-dots li.slick-active{
-    width: 20px;
-}
-.slick-dotted.slick-slider{
-    padding-bottom: 35px;
-}
-.slick-dots li button{
-    background: #0044896e;
-    border-radius: 50px;
-    width: 8px;
-    height: 8px;
-    padding: 0;
-    transition: all 300ms ease;
-}
-.slick-dots li.slick-active button{
-    background: #004489;
-    width: 20px;
-}
+        .infoBannerWrap ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+        .infoBannerWrap ul li {
+            list-style: none;
+            color: #fff;
+            text-transform: capitalize;
+        }
+        .infoBannerWrap ul li:first-child {
+            background: url(images/right-light.png) right center / 12px no-repeat;
+            padding-right: 30px;
+        }
+        .infoBannerWrap ul li a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .contactContentWrap {
+            background-color: #fafafa;
+            padding: 80px 0;
+        }
+        .contactContentInner {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        .contactContentWrap .leftCol, .contactContentWrap .rightCol {
+            max-width: 50%;
+            width: 100%;
+            padding: 0 15px;
+        }
+        .contactContentWrap .contactFormWrapper .contactFieldsParent {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        .contactContentWrap .contactFormWrapper .contactFieldWrap {
+            width: 100%;
+            max-width: 50%;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+        .contactContentWrap .contactFormWrapper .contactFieldWrap:last-child, .contactContentWrap .contactFormWrapper .contactFieldWrap:nth-child(3) {
+            max-width: 100%;
+        }
+        .contactContentWrap .contactFormWrapper .contactFieldWrap input, .contactContentWrap .contactFormWrapper .contactFieldWrap textarea {
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid rgba(0 0 0 / 10%);
+            outline: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0 0 0 / 4%);
+            transition: all 0.3s ease;
+        }
+        .contactContentWrap .contactFormWrapper .contactFieldWrap textarea {
+            height: auto;
+        }
+        .contactContentWrap .contactFormWrapper .contactFieldWrap input:focus,
+        .contactContentWrap .contactFormWrapper .contactFieldWrap textarea:focus{
+            border-color: #004489;
+        }
+        .contactContentWrap .contactFormWrapper button {
+            background-color: #004489;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            padding: 10px 20px;
+            height: 50px;
+            color: #fff;
+        }
+        .contactContentWrap .rightCol p.contactDesc{
+            color: #333;
+            margin-bottom: 50px;
+        }
+        .contactInfoBoxes .boxes {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .contactInfoBoxes .boxes .iconWrap {
+            background: #004489;
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contactInfoBoxes .boxes .iconWrap img {
+            width: 30px;
+            height: 30px;
+            filter: invert(1);
+        }
+        .contactInfoBoxes .boxes .txt{
+            flex: 1 0 0;
+        }
+        .contactInfoBoxes .boxes .txt h2 {
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .contactInfoBoxes .boxes .txt span, .contactInfoBoxes .boxes .txt a {
+            text-decoration: none;
+            font-weight: 300;
+            color: #333;
+        }
+
 
         @media (max-width: 1024px) {
             .hero {
@@ -989,6 +1139,18 @@
             .servicesContent p br{
                 display: none;
             }
+            .faqsInner .leftCol{
+                display: none;
+            }
+            .faqsInner .rightCol{
+                width: 100%;
+            }
+            .contactContentWrap .leftCol, .contactContentWrap .rightCol{
+                min-width: 100%;
+            }
+            .contactContentInner{
+                flex-direction: column-reverse;
+            }
         }
         @media screen and (max-width: 768px) {
             .topBarWrap{
@@ -1003,8 +1165,16 @@
                 margin-bottom: 5px;
                 font-weight: 400;
             }
+            .experience-text h3{
+                font-size: 18px;
+            }
             .experience-text p{
                 font-size: 12px;
+            }
+            .experience-text ul li{
+                font-size: 12px;
+                background-size: 15px;
+                padding-left: 20px;
             }
             .hero{
                 padding: 30px 3% !important;
@@ -1100,6 +1270,12 @@
             .frequentDestWrap .locationsPara{
                 font-size: 10px;
                 line-height: 2.5;
+            }
+            .contactContentWrap .contactFormWrapper .contactFieldWrap {
+                max-width: 100%;
+            }
+            .contactInfoBoxes .boxes{
+                gap: 15px;
             }
             .footer{
                 padding: 80px 5% 40px;
